@@ -21,6 +21,15 @@ else
 	export LIBRARY_PATH="$LD_LIBRARY_PATH"
 fi
 
+# Flash-X test archive paths
+if ! [ $FLASHTEST_MAIN_ARCHIVE ]; then
+	export FLASHTEST_MAIN_ARCHIVE="$PROJECT_HOME/tests/MainArchive"
+fi
+
+if ! [ $FLASHTEST_LOCAL_ARCHIVE ]; then
+	export FLASHTEST_LOCAL_ARCHIVE="$PROJECT_HOME/tests/LocalArchive"
+fi
+
 # Store path to bittree
 export BITTREE_2D_HOME="$PROJECT_HOME/software/bittree/Bittree/install-$SiteName/2D"
 export BITTREE_3D_HOME="$PROJECT_HOME/software/bittree/Bittree/install-$SiteName/3D"

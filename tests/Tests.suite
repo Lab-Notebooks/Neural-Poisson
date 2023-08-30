@@ -15,4 +15,5 @@
 # --rbase, -rbase 	Date string YYYY-MM-DD[_version]
 # --tolerance, -tol	Tolerance for SFOCU
 
+unitTest/Poisson/Amrex -t "UnitTest/Multigrid/AMReX/2d" -np 2
 incompFlow/ChannelFlow -t "UnitTest/incompFlow/ChanneFlow/2d/Periodic" -np 4

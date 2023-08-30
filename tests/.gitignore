@@ -1,6 +1,8 @@
 config
 execfile
 test.info
+LocalArchive
+MainArchive
 TestResults
 flashxtest_api.log
 job.*
