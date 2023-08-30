@@ -1,0 +1,116 @@
+---------------------------------------------------------------------------------------
+Execution Environment:
+---------------------------------------------------------------------------------------
+PROJECT_HOME=/home/akash/Desktop/Akash/Workbench/Neural-Poisson
+SITE_HOME=/home/akash/Desktop/Akash/Workbench/Neural-Poisson/sites/sedona
+MPI_HOME=/usr/local/openmpi-4.1.1
+HDF5_HOME=/usr/local/hdf5-1.8.20
+FLASHX_HOME=/home/akash/Desktop/Akash/Workbench/Neural-Poisson/software/flashx/Flash-X
+AMREX2D_HOME=/home/akash/Desktop/Akash/Workbench/Neural-Poisson/software/amrex/AMReX/install-sedona/2D
+AMREX3D_HOME=/home/akash/Desktop/Akash/Workbench/Neural-Poisson/software/amrex/AMReX/install-sedona/3D
+NVHPC_HOME=/usr/local/nvhpc-cuda-11.2/Linux_x86_64/21.3/compilers
+HYPRE_HOME=/home/akash/Desktop/Akash/Workbench/Neural-Poisson/software/hypre/HYPRE/install-sedona
+ANN_HOME=/home/akash/Desktop/Akash/Workbench/Neural-Poisson/software/ann/ANN
+BITTREE_2D_HOME=/home/akash/Desktop/Akash/Workbench/Neural-Poisson/software/bittree/Bittree/install-sedona/2D
+BITTREE_3D_HOME=/home/akash/Desktop/Akash/Workbench/Neural-Poisson/software/bittree/Bittree/install-sedona/3D
+FLASHTEST_MAIN_ARCHIVE=/home/akash/Desktop/Akash/Workbench/Neural-Poisson/tests/MainArchive
+FLASHTEST_LOCAL_ARCHIVE=/home/akash/Desktop/Akash/Workbench/Neural-Poisson/tests/LocalArchive
+LD_LIBRARY_PATH=/usr/local/hdf5-1.8.20/lib:/usr/local/nvhpc-cuda-11.2/Linux_x86_64/21.3/comm_libs/nvshmem/lib:/usr/local/nvhpc-cuda-11.2/Linux_x86_64/21.3/comm_libs/nccl/lib:/usr/local/nvhpc-cuda-11.2/Linux_x86_64/21.3/math_libs/lib64:/usr/local/nvhpc-cuda-11.2/Linux_x86_64/21.3/compilers/lib:/usr/local/nvhpc-cuda-11.2/Linux_x86_64/21.3/cuda/extras/CUPTI/lib64:/usr/local/nvhpc-cuda-11.2/Linux_x86_64/21.3/cuda/lib64:/usr/local/openmpi-4.1.1/lib:/home/akash/Desktop/Akash/Workbench/Neural-Poisson/software/hypre/HYPRE/install-sedona/lib:/home/akash/Desktop/Akash/Workbench/Neural-Poisson/software/ann/ANN/lib
+---------------------------------------------------------------------------------------
+Wrote parameter information to file flash.par
+ [gr_amrexInit] Starting
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+AMReX (21.05) initialized
+Using default ref_ratio = 2 at all levels
+Successfully read inputs file ... 
+ [gr_amrexInit] Finished
+ Grid_init: resolution based on runtime params:
+  lrefine          dx              dy
+      1             0.031           0.031
+      2             0.016           0.016
+      3             0.008           0.008
+ MaterialProperties initialized
+ Source terms initialized
+Created and initialized          4 blocks on level 1
+Created and initialized         16 blocks on level 2
+Created and initialized         64 blocks on level 3
+ gr_amrexMG_composite_solve   = F
+ gr_amrexMG_max_iter          =         100
+ gr_amrexMG_linop_maxorder    =           2
+ gr_amrexMG_Tol               =   1.0000000000000000E-010
+  Finished with Grid_initDomain, no restart
+ Ready to call Hydro_init
+ Hydro initialized
+ Gravity initialized
+ Initial dt verified
+ arrays freed
+ *** Wrote checkpoint file to flashx_hdf5_chk_0000 ****
+ *** Wrote grid data to flashx_hdf5_grd_0000 ****
+ *** Wrote plotfile to flashx_hdf5_plt_cnt_0000 ****
+ Initial plotfile written
+ Driver init all done
+ Preparing to call Grid_unitTest
+MLMG: # of AMR levels: 1
+      # of MG levels on the coarsest AMR level: 5
+MLMG: Initial rhs               = 191.2200289
+MLMG: Initial residual (resid0) = 191.2200289
+MLMG: Iteration   1 Fine resid/bnorm = 0.1282182785
+MLMG: Iteration   2 Fine resid/bnorm = 0.006136327316
+MLMG: Iteration   3 Fine resid/bnorm = 0.0002734026622
+MLMG: Iteration   4 Fine resid/bnorm = 1.19415609e-05
+MLMG: Iteration   5 Fine resid/bnorm = 4.458571334e-07
+MLMG: Iteration   6 Fine resid/bnorm = 1.046637868e-08
+MLMG: Iteration   7 Fine resid/bnorm = 3.754310754e-10
+MLMG: Iteration   8 Fine resid/bnorm = 1.535391879e-11
+MLMG: Final Iter. 8 resid, resid/bnorm = 2.935976795e-09, 1.535391879e-11
+MLMG: Timers: Solve = 0.000646629 Iter = 0.00058895 Bottom = 6.4451e-05
+   2.9359767950154492E-009
+MLMG: # of AMR levels: 1
+      # of MG levels on the coarsest AMR level: 6
+MLMG: Initial rhs               = 195.9096091
+MLMG: Initial residual (resid0) = 195.9096091
+MLMG: Iteration   1 Fine resid/bnorm = 0.2442405748
+MLMG: Iteration   2 Fine resid/bnorm = 0.01640771548
+MLMG: Iteration   3 Fine resid/bnorm = 0.0008842561129
+MLMG: Iteration   4 Fine resid/bnorm = 4.3293832e-05
+MLMG: Iteration   5 Fine resid/bnorm = 2.401380983e-06
+MLMG: Iteration   6 Fine resid/bnorm = 8.315102651e-08
+MLMG: Iteration   7 Fine resid/bnorm = 3.778558836e-09
+MLMG: Iteration   8 Fine resid/bnorm = 2.05887921e-10
+MLMG: Iteration   9 Fine resid/bnorm = 1.054003447e-11
+MLMG: Final Iter. 9 resid, resid/bnorm = 2.064894034e-09, 1.054003447e-11
+MLMG: Timers: Solve = 0.001965385 Iter = 0.001882198 Bottom = 7.3971e-05
+   2.0648940335377119E-009
+MLMG: # of AMR levels: 1
+      # of MG levels on the coarsest AMR level: 7
+MLMG: Initial rhs               = 197.0949414
+MLMG: Initial residual (resid0) = 197.0949414
+MLMG: Iteration   1 Fine resid/bnorm = 0.4905096086
+MLMG: Iteration   2 Fine resid/bnorm = 0.03942329777
+MLMG: Iteration   3 Fine resid/bnorm = 0.002368040619
+MLMG: Iteration   4 Fine resid/bnorm = 0.0001238959784
+MLMG: Iteration   5 Fine resid/bnorm = 8.746871535e-06
+MLMG: Iteration   6 Fine resid/bnorm = 4.126149466e-07
+MLMG: Iteration   7 Fine resid/bnorm = 1.522889677e-08
+MLMG: Iteration   8 Fine resid/bnorm = 9.468188546e-10
+MLMG: Iteration   9 Fine resid/bnorm = 5.613878711e-11
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.106467096e-08, 5.613878711e-11
+MLMG: Timers: Solve = 0.009836464 Iter = 0.009506041 Bottom = 0.00010574
+   1.1064670957239287E-008
+  
+ 3 PERIODIC Poisson Solver time =    1.2999999999999999E-002  sec.
+ INFO: Grid_fillGuardCells is ignoring masking.
+  
+ Mean Analytical, Numerical Sol= -0.86736174E-18 -0.16046192E-15
+ ||Phi - PhiAnalytical||inf =  0.68163624E-03
+ ||Phi - PhiAnalytical||2   =  0.34101544E-03
+  Total Volume =   1.0000000000000000     
+  Total Number of Tiles on Leaf Blocks=          64
+ All tests PASSED
+  
+ Returned from Grid_unitTest
+ *** Wrote checkpoint file to flashx_hdf5_chk_0001 ****
+ *** Wrote plotfile to flashx_forced_hdf5_plt_cnt_0000 ****
+ [gr_amrexFinalize] Finalizing
+AMReX (21.05) finalized
