@@ -1,28 +1,33 @@
-# Parfile
-Parfile.plot_var_1 = "rhs"
-Parfile.plot_var_2 = "nsol"
-Parfile.plot_var_3 = "diff"
-Parfile.plot_var_4 = "asol"
+# Toml input file
+[Parfile]
+  plot_var_1 = "rhds"
+  plot_var_2 = "nsol"
+  plot_var_3 = "diff"
+  plot_var_4 = "asol"
+  plot_var_5 = "rfin"
+  
+  gr_amrexMG_composite_solve = ".TRUE."
+  gr_amrexMG_Tol = 1e-11
+  gr_amrexMG_max_iter = 1000
+  
+  lrefine_min       = 1
+  lrefine_max       = 1
+  refine_var_1      = "rfin"
+  
+  xmin = 0.0
+  xmax = 1.0
+  ymin = 0.0
+  ymax = 1.0
+  zmin = 0.0
+  zmax = 1.0
+   
+  plotFileIntervalStep = 1
 
-Parfile.nblockx = 8
-Parfile.nblocky = 8
-Parfile.nblockz = 8
+  ignoreForcedPlot = ".TRUE."  
 
-#    AMR refinement parameters
-Parfile.lrefine_min = 1
-Parfile.lrefine_max = 1
-Parfile.refine_var_1 = "asol"
-Parfile.refine_cutoff_1 = 0.5
-
-Parfile.xmax = 1.0
-Parfile.xmin = 0.0
-Parfile.ymax = 1.0
-Parfile.ymin = 0.0
-Parfile.zmax = 1.0
-Parfile.zmin = 0.0
-Parfile.xr_boundary_type = "dirichlet"
-Parfile.xl_boundary_type = "dirichlet"
-Parfile.yr_boundary_type = "dirichlet"
-Parfile.yl_boundary_type = "dirichlet"
-Parfile.zr_boundary_type = "dirichlet"
-Parfile.zl_boundary_type = "dirichlet"
+  xl_boundary_type = "dirichlet"
+  xr_boundary_type = "dirichlet"
+  yl_boundary_type = "dirichlet"
+  yr_boundary_type = "dirichlet"
+  zl_boundary_type = "dirichlet"
+  zr_boundary_type = "dirichlet"

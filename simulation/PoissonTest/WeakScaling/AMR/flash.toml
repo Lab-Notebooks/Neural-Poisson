@@ -1,0 +1,5 @@
+Parfile.nblockx = 2
+Parfile.nblocky = 2
+Parfile.nblockz = 2
+Parfile.lrefine_min = 1
+Parfile.lrefine_max = 5
